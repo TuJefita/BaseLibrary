@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>a4c57b6e-2b03-4317-a99a-ddd12642ae7d</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>BaseLibrary</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\Boton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\Control.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\Label.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\ManejadorControles.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EstadoJuego.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Fuente\Fuente.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Input\MouseInput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ManejadorEstadosJuegos.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pantallas\EstadoBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sprite Classes\SpriteBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)HectorName.xml" />
+  </ItemGroup>
+</Project>
