@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+* Nombre: Hector Hawley Herrera
+* Fecha de creación: 01 de Enero del 2015
+* Fecha de Ultima modificación: 01 de Enero del 2015
+* Descripcion:
+*/
+
+using System;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -20,7 +27,7 @@ namespace BaseLibrary.Sprite_Classes
 
         #region Constructors
         /// <summary>
-        /// Constructor base
+        /// Constructor base del sprite
         /// </summary>
         /// <param name="imagen"></param>
         /// <param name="posicion"></param>

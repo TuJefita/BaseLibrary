@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+* Nombre: Hector Hawley Herrera
+* Fecha de creación: 01 de Enero del 2015
+* Fecha de Ultima modificación: 01 de Enero del 2015
+* Descripcion: Clase estatica que representa el mouse. Solo sirve en Windows o Linux
+*/
+
+using System;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
@@ -6,6 +13,9 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace BaseLibrary.Input
 {
+
+#if WINDOWS || LINUX
+
     public static class MouseInput
     {
         #region Elementos
@@ -37,11 +47,19 @@ namespace BaseLibrary.Input
 
         #region Otros
 
+        /// <summary>
+        /// Revisa si paso un click izquierdo
+        /// </summary>
+        /// <returns></returns>
         public static bool ClickOcurred()
         {
             return (LastMouseState.LeftButton == ButtonState.Released && CurrentMouseState.LeftButton == ButtonState.Pressed);
         }
 
+        /// <summary>
+        /// Regresa la posicion actual del mouse.
+        /// </summary>
+        /// <returns></returns>
         public static Vector2 MousePosition()
         {
 #if WINDOWS
@@ -51,6 +69,10 @@ namespace BaseLibrary.Input
 #endif
         }
 
+        /// <summary>
+        /// Regresa el rectangle que representa al mouse no el rectangulo de dibujo.
+        /// </summary>
+        /// <returns></returns>
         public static Rectangle MouseRectangle()
         {
 #if WINDOWS
@@ -61,11 +83,23 @@ namespace BaseLibrary.Input
 		
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Posicion"> Rectangulo que representa las dimensiones y posicion del objeto </param>
+        /// <returns></returns>
         public static bool Intersects(Rectangle Posicion)
         {
             return MouseInput.MouseRectangle().Intersects(Posicion);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Posicion"> Del objeto </param>
+        /// <param name="width"> Longitud </param>
+        /// <param name="height"> Altura /param>
+        /// <returns></returns>
         public static bool Intersects(Vector2 Posicion, int width, int height)
         {
             return MouseInput.MouseRectangle().Intersects(new Rectangle((int)Posicion.X, (int)Posicion.Y, width, height));
@@ -74,4 +108,6 @@ namespace BaseLibrary.Input
         #endregion
 
     }
+
+#endif
 }

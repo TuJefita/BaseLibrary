@@ -1,6 +1,9 @@
-﻿// Trabajador: Hector Hawley Herrera
-// Fecha:
-// Numero de revision:
+﻿/*
+* Nombre: Hector Hawley Herrera
+* Fecha de creación: 01 de Enero del 2015
+* Fecha de Ultima modificación: 01 de Enero del 2015
+* Descripcion: Control base. Madre de todos los controles
+*/
 
 using System;
 
@@ -11,41 +14,45 @@ namespace BaseLibrary.Controls
 {
     public abstract class Control
     {
-
         #region Elemento
 
-        public string Texto         { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string Texto             { get; set; }
 
         /// <summary>
         /// Para denotar si es dibujado o no.
         /// </summary>
-        public bool Visible         { get; set; }
+        public bool Visible             { get; set; }
 
         /// <summary>
         /// Para denotar si va a ser incluido en la logica del app o no.
         /// </summary>
-        public bool Activado     { get; set; }
+        public bool Activado            { get; set; }
 
         /// <summary>
         /// Para ver si fue seleccionado y/o aplastado. Sea el caso.
         /// </summary>
-        public bool Seleccionar     { get; set; }
+        public bool Seleccionar         { get; set; }
 
         /// <summary>
         /// Para hacer cosas relacionados con tiempos
         /// </summary>
-        public float Tiempo { get; set; }
+        public float Tiempo             { get; set; }
 
-        public Vector2 Posicion     { get; set; }
+        public Vector2 Posicion         { get; set; }
 
-        public Color Color          { get; set; }
+        public Color Color              { get; set; }
 
-        public SpriteFont Fuente { get; set; }
+        public SpriteFont Fuente        { get; set; }
 
-        /// <summary>
-        /// El evento al realizar si fue seleccionado.
-        /// </summary>
-        public event EventHandler Seleccionado;
+        #region Eventos
+
+        public event EventHandler Click = delegate { };
+        public event EventHandler Cambio = delegate { };
+
+        #endregion
 
         #endregion
 
@@ -75,13 +82,21 @@ namespace BaseLibrary.Controls
         #region Otros
 
         /// <summary>
-        /// Funcion para poder simplificar el evento incluido en este control.
+        /// Corre el evento cuando fue seleccionado.
         /// </summary>
         /// <param name="e"></param>
-        protected virtual void EnSeleccionado(EventArgs e)
+        protected virtual void EnClick(EventArgs e)
         {
-            if (Seleccionado != null)
-                Seleccionado(this, e);
+            Click(this, e);
+        }
+
+        /// <summary>
+        /// Corre el evento cuando fue modificado.
+        /// </summary>
+        /// <param name="e"></param>
+        protected virtual void EnCambio(EventArgs e)
+        {
+            Cambio(this, e);
         }
 
         #endregion

@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+* Nombre: Hector Hawley Herrera
+* Fecha de creación: 01 de Enero del 2015
+* Fecha de Ultima modificación: 01 de Enero del 2015
+* Descripcion: Ver el summary de la clase
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +17,10 @@ namespace BaseLibrary
 {
     public enum TipoCambio { Cambio, Pop, Empujar }
 
+    /// <summary>
+    /// Maneja todos los estado del juego actual y cambia, borra o agrega nuevos dependiendo
+    /// de nuestras necesidades
+    /// </summary>
     public class ManejadorEstadosJuegos : GameComponent
     {
 
@@ -55,6 +66,8 @@ namespace BaseLibrary
         {
             base.Update(gameTime);
         }
+
+        
 
         #endregion
 

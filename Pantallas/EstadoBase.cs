@@ -1,13 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿/*
+* Nombre: Hector Hawley Herrera
+* Fecha de creación: 01 de Enero del 2015
+* Fecha de Ultima modificación: 01 de Enero del 2015
+* Descripcion: Mira el summary de la clase
+*/
+
+using System;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace BaseLibrary.Pantallas
 {
+    /// <summary>
+    /// Pantalla base del juego. Sirve para encapsular toda logica de juego y dibujo de juego.
+    /// </summary>
     public class EstadoBase : EstadoJuego
     {
 
@@ -86,6 +93,11 @@ namespace BaseLibrary.Pantallas
 
         #region Otros
 
+        /// <summary>
+        /// Pide una transicion del juego a otra
+        /// </summary>
+        /// <param name="cambio"></param>
+        /// <param name="game"></param>
         public virtual void Transicion(TipoCambio cambio, EstadoBase game)
         {
             Transicionar = true;

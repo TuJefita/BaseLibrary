@@ -1,10 +1,20 @@
-﻿using System;
+﻿/*
+* Nombre: Hector Hawley Herrera
+* Fecha de creación: 01 de Enero del 2015
+* Fecha de Ultima modificación: 01 de Enero del 2015
+* Descripcion: Label.
+*/
+
+using System;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace BaseLibrary.Controls
 {
+    /// <summary>
+    /// Dibuja un string a la pantalla
+    /// </summary>
     public class Label : Control
     {
         #region Elementos

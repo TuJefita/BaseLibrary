@@ -21,6 +21,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Sprite Classes\SpriteBase.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)HectorName.xml" />
+    <None Include="$(MSBuildThisFileDirectory)InitClass - Copy.snippet" />
   </ItemGroup>
 </Project>

@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+* Nombre: Hector Hawley Herrera
+* Fecha de creación: 01 de Enero del 2015
+* Fecha de Ultima modificación: 01 de Enero del 2015
+* Descripcion: Vea summary en clase
+*/
+
+using System;
 using System.Collections.Generic;
 
 using Microsoft.Xna.Framework;
@@ -15,7 +22,6 @@ namespace BaseLibrary.Controls
     public class ManejadorControles : List<Control>
     {
         #region Elementos
-       
 
         public int ControlSeleccionado { get; set; }
         public bool AceptarInput { get; set; }
@@ -75,6 +81,9 @@ namespace BaseLibrary.Controls
 
         public void Draw(SpriteBatch spriteBatch)
         {
+            if (Count == 0)
+                return;
+
             foreach (Control c in this)
             {
                 if (c.Visible)

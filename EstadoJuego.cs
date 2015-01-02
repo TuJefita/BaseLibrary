@@ -1,9 +1,19 @@
-﻿using System;
+﻿/*
+* Nombre: Hector Hawley Herrera
+* Fecha de creación: 01 de Enero del 2015
+* Fecha de Ultima modificación: 01 de Enero del 2015
+* Descripcion:
+*/
+
+using System;
 
 using Microsoft.Xna.Framework;
 
 namespace BaseLibrary
 {
+    /// <summary>
+    /// Un estado de juego base. Tu imaginacion es el limite.
+    /// </summary>
     public abstract partial class EstadoJuego : DrawableGameComponent
     {
 
@@ -11,11 +21,15 @@ namespace BaseLibrary
 
         protected ManejadorEstadosJuegos ManejadorEstado;
 
+        /// <summary>
+        /// Regresa este estado de juego.
+        /// </summary>
         public EstadoJuego Tag { get; private set; }
 
         #endregion
 
         #region Constructores
+
 
         public EstadoJuego(Game game, ManejadorEstadosJuegos manager)
             : base(game)
