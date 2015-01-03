@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Nombre: Hector Soto
+//Fecha: 02/01/2015
+//Ultima Modificacion: 02/01/2015
+//Descripcion:
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,7 +12,7 @@ using Microsoft.Xna.Framweork.Input;
 
 namespace BaseLibrary.Controls
 {
-    class TextBox : Control
+    public class TextBox : Control
     {
 
     }
