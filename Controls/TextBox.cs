@@ -8,7 +8,7 @@ using Microsoft.Xna.Framweork.Input;
 
 namespace BaseLibrary.Controls
 {
-    class TextBox
+    class TextBox : Control
     {
 
     }
