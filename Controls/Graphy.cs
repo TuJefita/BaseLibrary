@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace BaseLibrary.Controls
 {
-    class Graphy
+    class CheckBox
     {
     }
 }
