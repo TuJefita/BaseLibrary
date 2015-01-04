@@ -86,7 +86,7 @@ namespace BaseLibrary.Input
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="Posicion"> Rectangulo que representa las dimensiones y posicion del objeto </param>
+        /// <param name="Posicion"> Rectangulo que representa las dimensiones Puntos_Y posicion del objeto </param>
         /// <returns></returns>
         public static bool Intersects(Rectangle Posicion)
         {

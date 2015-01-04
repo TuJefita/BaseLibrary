@@ -8,7 +8,7 @@ using System.Text;
 
 namespace BaseLibrary.Controls
 {
-     public class Cronometro: Control 
+     /*public class Cronometro: Control 
     {
-    }
+    }*/
 }

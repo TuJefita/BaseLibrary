@@ -32,7 +32,7 @@ namespace BaseLibrary.Controls
         public bool Activado            { get; set; }
 
         /// <summary>
-        /// Para ver si fue seleccionado y/o aplastado. Sea el caso.
+        /// Para ver si fue seleccionado Puntos_Y/o aplastado. Sea el caso.
         /// </summary>
         public bool Seleccionar         { get; set; }
 

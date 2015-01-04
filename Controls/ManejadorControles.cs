@@ -14,7 +14,7 @@ using Microsoft.Xna.Framework.Graphics;
 namespace BaseLibrary.Controls
 {
     /// <summary>
-    /// Se utiliza para hacer facil la escritura de varias controles y el
+    /// Se utiliza para hacer facil la escritura de varias controles Puntos_Y el
     /// manejo de tal sin tener que escribir cada control independientemente.
     /// Ademas de que me ayuda a poner control de logica sobre los controles
     /// sin crear funciones en otro lado.
@@ -53,7 +53,7 @@ namespace BaseLibrary.Controls
         }
 
         /// <summary>
-        /// Inizializa una lista con una colleccion y la fuente seleccionada.
+        /// Inizializa una lista con una colleccion Puntos_Y la fuente seleccionada.
         /// </summary>
         /// <param name="colleccion"> Colleccion previa </param>
         /// <param name="fuente"> Tipo de fuente a usar </param>

@@ -12,6 +12,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Boton.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Control.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Cronometro .cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\GraphPlot.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Label.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\ManejadorControles.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Slider.cs" />

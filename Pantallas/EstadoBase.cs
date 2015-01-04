@@ -13,7 +13,7 @@ using Microsoft.Xna.Framework.Graphics;
 namespace BaseLibrary.Pantallas
 {
     /// <summary>
-    /// Pantalla base del juego. Sirve para encapsular toda logica de juego y dibujo de juego.
+    /// Pantalla base del juego. Sirve para encapsular toda logica de juego Puntos_Y dibujo de juego.
     /// </summary>
     public class EstadoBase : EstadoJuego
     {

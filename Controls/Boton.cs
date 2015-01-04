@@ -103,7 +103,7 @@ namespace BaseLibrary.Controls
         #region Otros
 
         /// <summary>
-        /// Funcion obligatoria para cambiar la funcion del boton. Cambia el boton y el texto.
+        /// Funcion obligatoria para cambiar la Funcion del boton. Cambia el boton y el texto.
         /// </summary>
         /// <param name="posicion"></param>
         public void CambiarPosicion(Vector2 posicion)

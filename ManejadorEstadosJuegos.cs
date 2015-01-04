@@ -18,7 +18,7 @@ namespace BaseLibrary
     public enum TipoCambio { Cambio, Pop, Empujar }
 
     /// <summary>
-    /// Maneja todos los estado del juego actual y cambia, borra o agrega nuevos dependiendo
+    /// Maneja todos los estado del juego actual Puntos_Y cambia, borra o agrega nuevos dependiendo
     /// de nuestras necesidades
     /// </summary>
     public class ManejadorEstadosJuegos : GameComponent
@@ -125,7 +125,7 @@ namespace BaseLibrary
         }
 
         /// <summary>
-        /// Cambia el estado del juego al indicado  y borra los anteriores.
+        /// Cambia el estado del juego al indicado  Puntos_Y borra los anteriores.
         /// </summary>
         /// <param name="nuevoEstado"> El tipo de estado al que quieras cambiar s</param>
         public void CambioEstado(EstadoJuego nuevoEstado)
