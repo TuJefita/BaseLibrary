@@ -22,7 +22,9 @@ namespace BaseLibrary.Sprite_Classes
         public Texture2D Imagen { get; set; }
         public Vector2 Posicion { get; set; }
         public Rectangle Bordes { get; set; }
+        public Color Color { get; set; }
         public float Rotacion   { get; set; }
+        public float Depth { get; set; }
 
         #endregion
 
@@ -37,7 +39,9 @@ namespace BaseLibrary.Sprite_Classes
         {
             Imagen = imagen;
             Posicion = posicion;
-            Bordes = borders ?? imagen.Bounds; 
+            Bordes = borders ?? imagen.Bounds;
+            Color = Color.White;
+            Depth = 1.0f;
         }
 
         public SpriteBase(Texture2D imagen, Vector2 posicion, Rectangle? borders, float rotacion)
@@ -46,6 +50,8 @@ namespace BaseLibrary.Sprite_Classes
             Posicion = posicion;
             Bordes = borders ?? imagen.Bounds;
             Rotacion = rotacion;
+            Color = Color.White;
+            Depth = 1.0f;
         }
 
         #endregion
@@ -58,7 +64,7 @@ namespace BaseLibrary.Sprite_Classes
         /// <param name="spriteBatch"></param>
         public void Dibujar(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(Imagen, Posicion, Bordes, Color.White, Rotacion, Vector2.Zero, 1.0f, SpriteEffects.None, 1.0f);
+            spriteBatch.Draw(Imagen, Posicion, Bordes, Color, Rotacion, Vector2.Zero, 1.0f, SpriteEffects.None, Depth);
         }
 
         #endregion

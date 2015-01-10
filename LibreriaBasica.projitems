@@ -19,11 +19,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)EstadoJuego.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Fuente\Fuente.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Input\MouseInput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Input\TouchInput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\Managers.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ManejadorEstadosJuegos.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pantallas\EstadoBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pantallas\OpcionesJuego.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Sprite Classes\SpriteBase.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)InitClass - Copy.snippet" />
   </ItemGroup>
 </Project>

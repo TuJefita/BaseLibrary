@@ -1,7 +1,7 @@
 ﻿/*
 * Nombre: Hector Hawley Herrera
 * Fecha de creación: 01 de Enero del 2015
-* Fecha de Ultima modificación: 01 de Enero del 2015
+* Fecha de Ultima modificación: 09 de Enero del 2015
 * Descripcion: Label.
 */
 
@@ -18,6 +18,10 @@ namespace BaseLibrary.Controls
     public class Label : Control
     {
         #region Elementos
+
+        public override Vector2 Posicion { get; set; }
+        public override string Texto { get; set; }
+        public override float Tiempo { get; set; }
 
         private float tamañoFuente;
 
@@ -46,6 +50,7 @@ namespace BaseLibrary.Controls
 
         public override void Draw(SpriteBatch spriteBatch)
         {
+            if(!string.IsNullOrEmpty(Texto))
                 spriteBatch.DrawString(
                     Fuente,             //Fuete a usar
                     Texto,              //string

@@ -20,7 +20,6 @@ namespace BaseLibrary.Pantallas
 
         #region Elementos
 
-        protected Game RefJuego;
         protected EstadoBase estadoCambiar;
 
         protected bool Transicionar;
@@ -36,7 +35,7 @@ namespace BaseLibrary.Pantallas
         public EstadoBase(Game game, ManejadorEstadosJuegos manager)
             : base(game, manager)
         {
-            RefJuego = game;
+           
         }
 
         #endregion

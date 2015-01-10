@@ -11,6 +11,8 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
+using BaseLibrary.Fuente;
+
 namespace BaseLibrary.Controls
 {
     /// <summary>
@@ -30,6 +32,12 @@ namespace BaseLibrary.Controls
         #endregion
 
         #region Constructores
+
+        public ManejadorControles()
+            : base()
+        {
+            this.Fuente = Fuentes.FuenteBase;
+        }
 
         /// <summary>
         /// Inizializa una lista de controles con la fuente seleccionada.

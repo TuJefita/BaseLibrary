@@ -1,7 +1,7 @@
 ﻿/*
 * Nombre: Hector Hawley Herrera
 * Fecha de creación: 01 de Enero del 2015
-* Fecha de Ultima modificación: 01 de Enero del 2015
+* Fecha de Ultima modificación: 09 de Enero del 2015
 * Descripcion: Control base. Madre de todos los controles
 */
 
@@ -9,6 +9,8 @@ using System;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+
+using BaseLibrary.Fuente;
           
 namespace BaseLibrary.Controls
 {
@@ -19,7 +21,7 @@ namespace BaseLibrary.Controls
         /// <summary>
         /// 
         /// </summary>
-        public string Texto             { get; set; }
+        public abstract string Texto             { get; set; }
 
         /// <summary>
         /// Para denotar si es dibujado o no.
@@ -39,9 +41,9 @@ namespace BaseLibrary.Controls
         /// <summary>
         /// Para hacer cosas relacionados con tiempos
         /// </summary>
-        public float Tiempo             { get; set; }
+        public abstract float Tiempo { get; set; }
 
-        public Vector2 Posicion         { get; set; }
+        public abstract Vector2 Posicion { get; set; }
 
         public Color Color              { get; set; }
 
@@ -65,6 +67,8 @@ namespace BaseLibrary.Controls
             Activado = true;
             Texto = "";
             Tiempo = 200.0f;
+
+            Fuente = Fuentes.FuenteBase;
 
             Posicion = Vector2.Zero;
             Color = Color.White;
